@@ -6,13 +6,14 @@
     'sky',
     'blue',
     'middle',
-    'set',
+    'green',
+    'english',
   ];
   let word;
   let loc;
   let score;
   let miss;
-  const timeLimit = 3 * 1000;
+  const timeLimit = 10 * 1000;
   let startTime;
   let isPlaying = false;
 
