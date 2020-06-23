@@ -43,9 +43,14 @@
       clearTimeout(timeoutId);
       timerLabel.textContent = '0.00';
       setTimeout(() => {
-        alert('ゲームオーバー');
+        showResult();
       }, 100);
     }
+  }
+
+  function showResult(){
+    const accuracy = score + miss === 0 ? 0 : score / (score + miss) * 100;
+    alert(`正解数${score},ミス${miss}, 正答率${accuracy.toFixed(2)}%!`);
   }
 
   window.addEventListener('click', () => {
