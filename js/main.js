@@ -38,7 +38,10 @@
 
     if(timeLeft < 0){
       clearTimeout(timeoutId);
-      alert('ゲームオーバー');
+      timerLabel.textContent = '0.00';
+      setTimeout(() => {
+        alert('ゲームオーバー');
+      }, 100);
     }
   }
 
